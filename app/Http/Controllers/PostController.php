@@ -89,4 +89,25 @@ class PostController extends Controller
             
         }
     }
+
+    public function destroy($id)
+    {
+        $post = Post::findOrFail($id);
+        $post->delete();
+
+        if ($post) {
+            return redirect()
+                        ->route('post.index')
+                        ->with([
+                            'success' => 'sukses menghapus'
+                        ]);
+        }else{
+            return redirect()
+                        ->back()
+                        ->withInput()
+                        ->with([
+                            'error' => 'gagal menghapus'
+                        ]);
+        }
+    }
 }

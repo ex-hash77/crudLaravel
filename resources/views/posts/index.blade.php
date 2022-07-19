@@ -32,7 +32,7 @@
 
 						<table class="table table-bordered mt1">
 							<thead>
-								<tr>
+								<tr class="text-center">
 									<th scope="col">title</th>
 									<th scope="col">status</th>
 									<th scope="col">Create ata</th>
