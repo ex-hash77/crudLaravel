@@ -35,7 +35,7 @@
 								<tr class="text-center">
 									<th scope="col">title</th>
 									<th scope="col">status</th>
-									<th scope="col">Create ata</th>
+									<th scope="col">Create at</th>
 									<th scope="col">action</th>
 								</tr>
 							</thead>
